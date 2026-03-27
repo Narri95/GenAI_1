@@ -1,5 +1,5 @@
 import streamlit as st
-from src.helper import get_pdf_text,get_text_chunks,get_vector_store, get_conversational_chain
+from src.main import get_pdf_text,get_text_chunks,get_vector_store, get_conversational_chain
 
 def user_input(user_question):
     response=st.session_state.conversation({"question":user_question})
